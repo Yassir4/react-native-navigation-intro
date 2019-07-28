@@ -16,7 +16,6 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* anotherTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* anotherTestTests.m */; };
-		4FDFB76722E779100002F95B /* libReactNativeNavigation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDFB76422E778E10002F95B /* libReactNativeNavigation.a */; };
 		8C0F5C597B78908A8BFDCE6B /* libPods-anotherTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D8B274B89C1D3A0A5D27201 /* libPods-anotherTestTests.a */; };
 		B6E6DBE9BBFFC34E2811EE6C /* libPods-anotherTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD3517BB98EC8F347B7B8A6 /* libPods-anotherTest.a */; };
 		C1542EAB18DA0C14538B9E01 /* libPods-anotherTest-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFEBBA0D3DFEB78F1414383 /* libPods-anotherTest-tvOSTests.a */; };
@@ -37,20 +36,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
 			remoteInfo = "anotherTest-tvOS";
-		};
-		4FDFB76322E778E10002F95B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4FDFB75E22E778E10002F95B /* ReactNativeNavigation.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D8AFADBD1BEE6F3F00A4592D;
-			remoteInfo = ReactNativeNavigation;
-		};
-		4FDFB76522E778E10002F95B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4FDFB75E22E778E10002F95B /* ReactNativeNavigation.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7B49FEBB1E95090800DEB3EA;
-			remoteInfo = ReactNativeNavigationTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -73,7 +58,6 @@
 		2D02E4901E0B4A5D006451C7 /* anotherTest-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "anotherTest-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35641A652D1463D67F3745E6 /* Pods-anotherTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-anotherTest.release.xcconfig"; path = "Target Support Files/Pods-anotherTest/Pods-anotherTest.release.xcconfig"; sourceTree = "<group>"; };
 		493F177DB1BB785622AF4E4C /* Pods-anotherTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-anotherTestTests.release.xcconfig"; path = "Target Support Files/Pods-anotherTestTests/Pods-anotherTestTests.release.xcconfig"; sourceTree = "<group>"; };
-		4FDFB75E22E778E10002F95B /* ReactNativeNavigation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeNavigation.xcodeproj; path = "../node_modules/react-native-navigation/lib/ios/ReactNativeNavigation.xcodeproj"; sourceTree = "<group>"; };
 		5486E637D8A38040FDBA641A /* Pods-anotherTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-anotherTestTests.debug.xcconfig"; path = "Target Support Files/Pods-anotherTestTests/Pods-anotherTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		54A89E362E2F7B5D77C34F9E /* Pods-anotherTest-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-anotherTest-tvOS.release.xcconfig"; path = "Target Support Files/Pods-anotherTest-tvOS/Pods-anotherTest-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		7D8B274B89C1D3A0A5D27201 /* libPods-anotherTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-anotherTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,7 +82,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FDFB76722E779100002F95B /* libReactNativeNavigation.a in Frameworks */,
 				B6E6DBE9BBFFC34E2811EE6C /* libPods-anotherTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,15 +164,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		4FDFB75F22E778E10002F95B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4FDFB76422E778E10002F95B /* libReactNativeNavigation.a */,
-				4FDFB76622E778E10002F95B /* ReactNativeNavigationTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,7 +174,6 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				4FDFB75E22E778E10002F95B /* ReactNativeNavigation.xcodeproj */,
 				13B07FAE1A68108700A75B9A /* anotherTest */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* anotherTestTests */,
@@ -341,12 +314,6 @@
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 4FDFB75F22E778E10002F95B /* Products */;
-					ProjectRef = 4FDFB75E22E778E10002F95B /* ReactNativeNavigation.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* anotherTest */,
@@ -356,23 +323,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		4FDFB76422E778E10002F95B /* libReactNativeNavigation.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libReactNativeNavigation.a;
-			remoteRef = 4FDFB76322E778E10002F95B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4FDFB76622E778E10002F95B /* ReactNativeNavigationTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ReactNativeNavigationTests.xctest;
-			remoteRef = 4FDFB76522E778E10002F95B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		00E356EC1AD99517003FC87E /* Resources */ = {
@@ -701,7 +651,7 @@
 					"\"${PODS_ROOT}/Headers/Public/React-jsinspector\"",
 					"\"${PODS_ROOT}/Headers/Public/glog\"",
 					"\"${PODS_ROOT}/Headers/Public/yoga\"",
-					"$(SRCROOT)/../node_modules/react-native-navigation/lib/ios\n$(SRCROOT)/../node_modules/react-native-navigation/lib/ios\n$(SRCROOT)/../node_modules/react-native-navigation/lib/ios\n$(SRCROOT)/../node_modules/react-native-navigation/lib/ios\n$(SRCROOT)/../node_modules/react-native-navigation/lib/ios\n",
+					"$(SRCROOT)/../node_modules/react-native-navigation/lib/ios",
 				);
 				INFOPLIST_FILE = anotherTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -745,7 +695,7 @@
 					"\"${PODS_ROOT}/Headers/Public/React-jsinspector\"",
 					"\"${PODS_ROOT}/Headers/Public/glog\"",
 					"\"${PODS_ROOT}/Headers/Public/yoga\"",
-					"$(SRCROOT)/../node_modules/react-native-navigation/lib/ios\n$(SRCROOT)/../node_modules/react-native-navigation/lib/ios\n$(SRCROOT)/../node_modules/react-native-navigation/lib/ios\n$(SRCROOT)/../node_modules/react-native-navigation/lib/ios\n$(SRCROOT)/../node_modules/react-native-navigation/lib/ios\n",
+					"$(SRCROOT)/../node_modules/react-native-navigation/lib/ios",
 				);
 				INFOPLIST_FILE = anotherTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
