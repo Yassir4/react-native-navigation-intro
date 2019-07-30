@@ -1,3 +1,3 @@
-import {start} from './src/Navigation/index';
+import {start} from './src/Navigation';
 
 start();
