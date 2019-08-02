@@ -6,8 +6,14 @@ export const start = () => {
   Navigation.events().registerAppLaunchedListener(() => {
     Navigation.setRoot({
       root: {
-        component: {
-          name: 'HomeScreen',
+        stack: {
+          children: [
+            {
+              component: {
+                name: 'HomeScreen',
+              },
+            },
+          ],
         },
       },
     });

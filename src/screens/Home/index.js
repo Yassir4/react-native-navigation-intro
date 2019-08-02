@@ -1,12 +1,23 @@
 import React from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
+import {Navigation} from 'react-native-navigation';
 import styles from './styles';
 
-const Home = () => {
+const pushScreen = props => {
+  const {componentId} = props;
+  Navigation.push(componentId, {
+    component: {
+      name: 'PushedScreen',
+    },
+  });
+};
+const Home = props => {
   return (
     <View style={styles.container}>
       <View style={styles.buttonsSection}>
-        <TouchableOpacity style={styles.buttonWrapper}>
+        <TouchableOpacity
+          onPress={() => pushScreen(props)}
+          style={styles.buttonWrapper}>
           <Text style={styles.buttonText}>Push Screen</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.buttonWrapper}>
