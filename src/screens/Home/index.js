@@ -11,6 +11,37 @@ const pushScreen = props => {
     },
   });
 };
+
+const openModal = () => {
+  Navigation.showModal({
+    stack: {
+      children: [
+        {
+          component: {
+            name: 'PushedScreen',
+            passProps: {
+              text: 'This is the modal screen',
+            },
+            options: {
+              topBar: {
+                title: {
+                  text: 'Modal with stack',
+                },
+                leftButtons: [
+                  {
+                    color: 'skyblue',
+                    text: 'button',
+                    id: 'leftButton',
+                  },
+                ],
+              },
+            },
+          },
+        },
+      ],
+    },
+  });
+};
 const Home = props => {
   return (
     <View style={styles.container}>
@@ -20,7 +51,7 @@ const Home = props => {
           style={styles.buttonWrapper}>
           <Text style={styles.buttonText}>Push Screen</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.buttonWrapper}>
+        <TouchableOpacity onPress={openModal} style={styles.buttonWrapper}>
           <Text style={styles.buttonText}>open a modal</Text>
         </TouchableOpacity>
       </View>
