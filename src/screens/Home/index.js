@@ -1,47 +1,8 @@
 import React from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
-import {Navigation} from 'react-native-navigation';
+import {pushScreen, openModal} from 'Navigation';
 import styles from './styles';
 
-const pushScreen = props => {
-  const {componentId} = props;
-  Navigation.push(componentId, {
-    component: {
-      name: 'PushedScreen',
-    },
-  });
-};
-
-const openModal = () => {
-  Navigation.showModal({
-    stack: {
-      children: [
-        {
-          component: {
-            name: 'ModalScreen',
-            passProps: {
-              text: 'This is the modal screen',
-            },
-            options: {
-              topBar: {
-                title: {
-                  text: 'Title text',
-                },
-                leftButtons: [
-                  {
-                    color: '#00bfff',
-                    text: 'button',
-                    id: 'leftButton',
-                  },
-                ],
-              },
-            },
-          },
-        },
-      ],
-    },
-  });
-};
 const Home = props => {
   return (
     <View style={styles.container}>
