@@ -18,18 +18,18 @@ const openModal = () => {
       children: [
         {
           component: {
-            name: 'PushedScreen',
+            name: 'ModalScreen',
             passProps: {
               text: 'This is the modal screen',
             },
             options: {
               topBar: {
                 title: {
-                  text: 'Modal with stack',
+                  text: 'Title text',
                 },
                 leftButtons: [
                   {
-                    color: 'skyblue',
+                    color: '#00bfff',
                     text: 'button',
                     id: 'leftButton',
                   },
