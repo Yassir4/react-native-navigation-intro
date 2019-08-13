@@ -1,6 +1,6 @@
 // ModalScreen/index.js
 import React, {Component} from 'react';
-import {View, Text, TouchableOpacity} from 'react-native';
+import {View, Text} from 'react-native';
 import {Navigation} from 'react-native-navigation';
 import styles from './styles';
 
